@@ -121,39 +121,16 @@ button {
     width: 1.5rem;
 }
 /* FIXME : sum从新布局*/
-.contain-sum {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 10% 0;
-}
-
-.box-sum {
-    display: flex;
-    justify-content: space-between;
-}
-
-.motto {
-    position: absolute;
-    top: 80%;
-    padding: 0;
-    background: rgba(0, 0, 0, 0.611);
-    border-radius: 12px;
-    padding: 10px;
-}
 
 .code-background code pre {
     position: absolute;
-    background: rgb(13, 13, 16);
+    background: rgb(51, 51, 70);
     border-radius: 12px;
     padding: 20px 10px;
     z-index: -1;
     color: white;
 }
-.summary {
-    display: flex;
-    justify-content: space-evenly;
-}
+
 .lefttext,
 .righttext {
     padding: 10px;
@@ -161,21 +138,5 @@ button {
     border-radius: 12px;
 }
 /* TODO : 代码高亮背景排列 */
-.bk-one,
-.bk-two,
-.bk-three,
-.bk-four {
-    position: absolute;
-}
-.bk-one {
-    left: 1vh;
-}
-.bk-two {
-    left: 70vh;
-}
-.bk-three {
-    left: 120vh;
-}
-.bk-four {
-    left: 170vh;
-}
+/* 简单来说：父级元素设置为 position: relative，子元素设置为 position: absolute。 
+此时，子元素的坐标原点（0,0）就不再是页面左上角，而是这个父级元素的左上角。 */

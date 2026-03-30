@@ -1,47 +1,57 @@
 <!doctype html>
 <html lang="zh-CN">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ada's Blog</title>
-    <link rel="stylesheet" href="/assets/css/mainpage.css" />
-  </head>
-  <body>
-    <div class="header">
-      <div class="nav-guide">
-        <img src="/assets/image/logo2.jpg" alt="logo" class="nav-main-logo" />
-        <ul class="nav-links">
-          <li><a href="#">主页</a></li>
-          <li><a href="#">博客</a></li>
-          <li><a href="#">作品集</a></li>
-        </ul>
-      </div>
-      <div class="nav-caption">
-        <p>Ada'Bolg</p>
-      </div>
-      <div class="nav-tools">
-        <div class="nav-search">
-          <span class="searchline"></span>
-          <img src="/assets/image/search.png" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Ada's Blog</title>
+        <link rel="stylesheet" href="/assets/css/mainpage.css" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="nav-guide">
+                <img
+                    src="/assets/image/logo2.jpg"
+                    alt="logo"
+                    class="nav-main-logo"
+                />
+                <ul class="nav-links">
+                    <li><a href="#">主页</a></li>
+                    <li><a href="#">博客</a></li>
+                    <li><a href="#">作品集</a></li>
+                </ul>
+            </div>
+            <div class="nav-caption">
+                <p>Ada'Bolg</p>
+            </div>
+            <div class="nav-tools">
+                <div class="nav-search">
+                    <span class="searchline"></span>
+                    <img src="/assets/image/search.png" />
+                </div>
+                <div class="nav-switch-languge">
+                    <img src="/assets/image/language.png" alt="" />
+                </div>
+                <div class="nav-switch-theme">
+                    <img src="/assets/image/paint.png" alt="" />
+                </div>
+                <div class="nav-github">
+                    <img src="/assets/image/GitHub_Black.png" />
+                </div>
+            </div>
         </div>
-        <div class="nav-switch-languge">
-          <img src="/assets/image/language.png" alt="" />
-        </div>
-        <div class="nav-switch-theme">
-          <img src="/assets/image/paint.png" alt="" />
-        </div>
-        <div class="nav-github">
-          <img src="/assets/image/GitHub_Black.png" />
-        </div>
-      </div>
-    </div>
 
-    <div class="box">
-      <div class="sum-contain">
-        <div class="code-background">
-          <div class="bk-one">
-            <code>
-              <pre>
+        <div class="box">
+            <div class="pop-comment">
+                <p>用作个人简介(普通~)</p>
+                <p>此页面有过度设计的嫌疑(有点土)</p>
+                <p>这里会记录我所开发的(好像还没有)</p>
+                <p>作为博客会分享一些(在哪里)</p>
+            </div>
+            <div class="sum-contain">
+                <div class="code-background">
+                    <div class="bk-one">
+                        <pre>
+                            <code class="language-cshap">
 // A skeleton of a C# program using an explicit Main method 
 
 namespace YourNamespace; 
@@ -52,13 +62,12 @@ class Program
         Console.WriteLine("Hello,World!"); 
     } 
 }
-                            </pre
-              >
-            </code>
-          </div>
-          <div class="bk-two">
-            <code>
-              <pre>
+                            </code>
+                        </pre>
+                    </div>
+                    <div class="bk-two">
+                        <pre>
+<code class="language-python">
 from dataclasses import dataclass
 
 @dataclass
@@ -69,13 +78,12 @@ class Greeter:
         return f"Hello {name}, from {self.language}!"
 
 print(Greeter().greet())print("Hello,World!")
-                            </pre
-              >
-            </code>
-          </div>
-          <div class="bk-three">
-            <code>
-              <pre>
+</code>
+                        </pre>
+                    </div>
+                    <div class="bk-three">
+                        <pre>
+<code class="language-cpp">
     #include &lt;iostream &gt;
 
     template &lt;char... chars&gt;
@@ -89,13 +97,12 @@ print(Greeter().greet())print("Hello,World!")
     int main() {
         Hello &lt;'H','e','l','l','o',' ','C','+','+'>::print();
     }
-                            </pre
-              >
-            </code>
-          </div>
-          <div class="bk-four">
-            <code>
-              <pre>
+</code>
+                        </pre>
+                    </div>
+                    <div class="bk-four">
+                        <pre>
+<code class="language-javascript">
 const createGreeter = (language = "JavaScript") =&gt; ({
 greet: (name = "World") =&gt;
     Promise.resolve(`Hello ${name}, from ${language}!`)
@@ -104,59 +111,53 @@ greet: (name = "World") =&gt;
 createGreeter()
 .greet()
 .then(console.log);
-                            </pre
-              >
-            </code>
-          </div>
-          <div class="bk-five">
-            <code> </code>
-          </div>
-        </div>
+</code>
+                        </pre>
+                    </div>
+                    <div class="bk-five">
+                        <code> </code>
+                    </div>
+                </div>
 
-        <div class="sum-box">
-          <div class="sum-item">
-            <div class="lefttext">
-              <p>这里会记录我所开发的(好像还没有)</p>
-              <p>作为博客会分享一些(在哪里)</p>
+                <div class="sum-box">
+                    <div class="sum-item">
+                        <div class="headimage">
+                            <img src="/assets/image/8.jpg" />
+                        </div>
+                        <ul>
+                            <li>AdaX64</li>
+                            <li>2007年2月</li>
+                            <li>一个兴趣使然的软件开发者和编程爱好者</li>
+
+                            <li>
+                                <a
+                                    href="https://space.bilibili.com/3537111607150646?spm_id_from=333.1007.0.0"
+                                    ><img
+                                        src="/assets/image/bilibili.png"
+                                        alt=""
+                                    />BiliBili</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="headimage">
-              <img src="/assets/image/8.jpg" />
+
+            <div class="motto">
+                <p>
+                    我认可的黄金法则是如果我喜欢一个程序，我就必须把它分享给喜欢它的人。
+                </p>
+                <p>----摘录自gnu宣言</p>
             </div>
-            <ul>
-              <li>AdaX64</li>
-              <li>2007年2月</li>
-              <li>一个兴趣使然的软件开发者和编程爱好者</li>
 
-              <li>
-                <a
-                  href="https://space.bilibili.com/3537111607150646?spm_id_from=333.1007.0.0"
-                  ><img src="/assets/image/bilibili.png" alt="" />BiliBili</a
-                >
-              </li>
-            </ul>
-            <div class="righttext">
-              <p>用作个人简介(普通~)</p>
-              <p>此页面有过度设计的嫌疑(有点土)</p>
+            <div class="guide-down">
+                <p>下滑了解更多</p>
+                <div>
+                    <img src="/assets/image/DownArrow.png" class="downarrow" />
+                </div>
             </div>
-          </div>
+
+            <div class="flowshow"></div>
         </div>
-      </div>
-
-      <div class="motto">
-        <p>
-          我认可的黄金法则是如果我喜欢一个程序，我就必须把它分享给喜欢它的人。
-        </p>
-        <p>----摘录自gnu宣言</p>
-      </div>
-
-      <div class="guide-down">
-        <p>下滑了解更多</p>
-        <div>
-          <img src="/assets/image/DownArrow.png" class="downarrow" />
-        </div>
-      </div>
-
-      <div class="flowshow"></div>
-    </div>
-  </body>
+    </body>
 </html>

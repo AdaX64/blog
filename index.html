@@ -84,26 +84,27 @@ print(Greeter().greet())print("Hello,World!")
                     <div class="bk-three">
                         <pre>
 <code class="language-cpp">
-    #include &lt;iostream &gt;
+#include &lt;iostream &gt;
 
-    template &lt;char... chars&gt;
-    struct Hello {
-        static void print() {
-            ((std::cout &lt;&lt; chars), ...);
-            std::cout &lt;&lt; std::endl;
-        }
-    };
-
-    int main() {
-        Hello &lt;'H','e','l','l','o',' ','C','+','+'>::print();
+struct Hello {
+    static void print() {
+        ((std::cout &lt;&lt; chars), ...);
+        std::cout &lt;&lt; std::endl;
     }
+};
+
+int main() {
+    Hello &lt;'H','e','l','l','o',' ','C','+','+'>::print();
+}
 </code>
                         </pre>
                     </div>
                     <div class="bk-four">
                         <pre>
 <code class="language-javascript">
+
 const createGreeter = (language = "JavaScript") =&gt; ({
+    
 greet: (name = "World") =&gt;
     Promise.resolve(`Hello ${name}, from ${language}!`)
 });
@@ -114,9 +115,7 @@ createGreeter()
 </code>
                         </pre>
                     </div>
-                    <div class="bk-five">
-                        <code> </code>
-                    </div>
+                    <div class="bk-blank"></div>
                 </div>
 
                 <div class="sum-box">
@@ -132,32 +131,39 @@ createGreeter()
                             <li>
                                 <a
                                     href="https://space.bilibili.com/3537111607150646?spm_id_from=333.1007.0.0"
-                                    ><img
+                                >
+                                    <img
                                         src="/assets/image/bilibili.png"
                                         alt=""
-                                    />BiliBili</a
-                                >
+                                    />BiliBili
+                                </a>
                             </li>
                         </ul>
+                    </div>
+                    <div class="sum-motto">
+                        <p>
+                            我认可的黄金法则是如果我喜欢一个程序,我就必须把它分享给喜欢它的人.
+                        </p>
+                        <p>摘录自gnu宣言</p>
                     </div>
                 </div>
             </div>
 
-            <div class="motto">
-                <p>
-                    我认可的黄金法则是如果我喜欢一个程序，我就必须把它分享给喜欢它的人。
-                </p>
-                <p>----摘录自gnu宣言</p>
-            </div>
-
-            <div class="guide-down">
-                <p>下滑了解更多</p>
-                <div>
-                    <img src="/assets/image/DownArrow.png" class="downarrow" />
+            <div class="contain-guide">
+                <div class="guide-down">
+                    <p>下滑了解更多</p>
+                    <div>
+                        <img
+                            src="/assets/image/DownArrow.png"
+                            class="downarrow"
+                        />
+                    </div>
                 </div>
             </div>
 
             <div class="flowshow"></div>
         </div>
+
+        <div class="foot"></div>
     </body>
 </html>

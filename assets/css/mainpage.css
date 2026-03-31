@@ -13,10 +13,11 @@
 }
 body {
     height: 100vh;
-    background: rgb(123, 126, 183);
+    background: rgb(127, 131, 193);
 }
 code {
     font-family: ZSFT-443;
+    font-size: 0.8rem;
 }
 li,
 a,
@@ -41,11 +42,11 @@ button {
     margin: 10px;
 
     box-shadow:
-        4px 2px 2px rgba(255, 255, 255, 0.2),
-        -4px 2px 2px rgba(255, 255, 255, 0.2);
-    background: rgba(255, 255, 255, 0.1);
+        4px 4px 4px rgba(255, 255, 255, 0.2),
+        -4px 4px 4px rgba(255, 255, 255, 0.2);
+    background: rgb(78, 78, 101);
     border-radius: 18px;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(10px);
 }
 .nav-guide,
@@ -110,23 +111,21 @@ button {
     height: auto;
     clip-path: circle(40%);
 }
+/* 下引导 */
 
 .guide-down {
     position: absolute;
-    bottom: 5px;
+    text-align: center;
     left: 50%;
-    display: flex;
-    flex-direction: column;
+    transform: translateX(-50%);
+    bottom: 0px;
+    padding: 50px;
 }
 .guide-down p {
     font-size: 0.8rem;
     color: rgba(255, 255, 255, 0.231);
-    text-align: center;
 }
-.guide-down div {
-    display: flex;
-    justify-content: center;
-}
+
 .guide-down img {
     width: 1.5rem;
 }
@@ -136,6 +135,7 @@ button {
     display: flex;
     position: relative;
     justify-content: center;
+    margin-top: 10vh;
 }
 
 .code-background {
@@ -144,11 +144,10 @@ button {
     z-index: -10;
 }
 .code-background pre {
-    font-family: "ZSFT-443";
     position: absolute;
     background: rgb(51, 51, 70);
     border-radius: 12px;
-    padding: 20px 10px;
+    padding: 0 15px;
     color: white;
 }
 
@@ -160,31 +159,61 @@ button {
 .bk-one {
     position: absolute;
     transform: rotate(10deg);
-    left: -300px;
-    top: 50px;
+    left: -30px;
+    top: -60px;
 }
 .bk-two {
     position: absolute;
     transform: rotate(-10deg);
-    right: -150px;
-    top: 50px;
+    left: 400px;
+    top: 20px;
 }
 .bk-three {
     position: absolute;
     transform: rotate(-10deg);
-    left: -300px;
-    top: 250px;
+    left: -100px;
+    top: 220px;
 }
 .bk-four {
     position: absolute;
     transform: rotate(10deg);
-    right: -150px;
-    top: 250px;
+    left: 400px;
+    top: 180px;
+}
+
+/* 弹幕 */
+.pop-comment {
+    display: none;
 }
 /* 简介栏 */
 .sum-box {
-    background: rgba(209, 246, 255, 0.1);
+    background: rgba(80, 82, 83, 0.2);
     backdrop-filter: blur(5px);
     border-radius: 12px;
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sum-item {
+    display: flex;
+    align-items: center;
+}
+/* 格言栏目 */
+.contain-motto {
+    display: flex;
+    justify-content: center;
+}
+.motto {
+    background: rgb(142, 142, 201);
     padding: 10px;
+    text-align: center;
+    margin: 0 20%;
+    border-radius: 12px;
+    box-shadow:
+        20px 10px 10px rgba(68, 68, 68, 0.6),
+        -20px 10px 10px rgba(56, 56, 56, 0.6);
+    position: absolute;
+    bottom: 0px;
 }

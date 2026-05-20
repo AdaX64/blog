@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p,
+a,
+li {
+  color: whitesmoke;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  & li {
+    float: right;
+  }
+  list-style: none;
+}
+
+body {
+  background: gray;
+}
+/* 上面固定的导航栏 */
+.header-nav {
+  background: rgb(14, 14, 21);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav-guide,
+.nav-tools {
+  display: flex;
+}
+/* 导航栏 */
+
+.first-pages {
+  width: 100vw;
+  height: 100vh;
+  background: cadetblue;
+}

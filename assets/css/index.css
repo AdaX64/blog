@@ -1,42 +1,73 @@
+@import url("https://fontsapi.zeoseven.com/442/main/result.css");
+
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 p,
 a,
-li {
-  color: whitesmoke;
+ul,
+span {
+    color: whitesmoke;
+    font-family: Maple Mono NF CN;
 }
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 ul {
-  & li {
+    list-style: none;
+}
+li {
     float: right;
-  }
-  list-style: none;
 }
 
 body {
-  background: gray;
+    background: gray;
 }
 /* 上面固定的导航栏 */
 .header-nav {
-  background: rgb(14, 14, 21);
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    background: rgb(77, 77, 92);
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100vw;
 }
-.nav-guide,
+
+.nav-logo {
+    width: 3rem;
+    -webkit-user-drag: none;
+    clip-path: circle(40%);
+}
+.nav-guide {
+    margin: 0 auto 0 0;
+    display: flex;
+    align-items: center;
+}
+.home,
+.blog {
+    padding: 15px;
+}
+
+.nav-title {
+    margin: 0 auto;
+}
 .nav-tools {
-  display: flex;
+    margin: 0 20px 0 auto;
+    display: flex;
+}
+.search,
+.languge,
+.theme,
+.github {
+    padding: 0 20px;
 }
 /* 导航栏 */
-
+/* 第一页 */
 .first-pages {
-  width: 100vw;
-  height: 100vh;
-  background: cadetblue;
+    width: 100vw;
+    height: 100vh;
+    background: cadetblue;
 }
+/* 第一页 */

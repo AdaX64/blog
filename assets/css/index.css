@@ -33,6 +33,7 @@ body {
     display: flex;
     align-items: center;
     width: 100vw;
+    z-index: 10;
 }
 
 .nav-logo {
@@ -63,11 +64,49 @@ body {
 .github {
     padding: 0 20px;
 }
-/* 导航栏 */
+/* end导航栏 */
+
+.code-background {
+    display: none;
+}
+/* 弹幕 */
+.pop-comment {
+    display: none;
+}
 /* 第一页 */
 .first-pages {
     width: 100vw;
-    height: 100vh;
+    height: calc(100vw * 9 / 16);
     background: cadetblue;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 垂直居中 */
+    justify-content: center;
 }
-/* 第一页 */
+.head-image {
+    float: left;
+}
+.head-image img {
+    width: 12rem;
+    height: auto;
+    clip-path: circle(40%);
+}
+.contain-guide {
+    position: absolute;
+    /* 核心：贴在父容器最底部 */
+    bottom: 0;
+}
+/* end第一页 */
+
+/* 页脚 */
+.foot {
+    background: rgb(66, 70, 77);
+    padding: 50px 0;
+    display: flex;
+
+    align-content: center;
+    justify-content: center;
+}
+
+/* 页脚 */

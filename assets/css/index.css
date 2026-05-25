@@ -9,9 +9,15 @@
 p,
 a,
 ul,
+code,
 span {
-    color: whitesmoke;
+    color: rgb(252, 255, 252);
     font-family: Maple Mono NF CN;
+    font-size: 1.2rem;
+}
+svg {
+    height: 30px;
+    width: auto;
 }
 a {
     text-decoration: none;
@@ -24,7 +30,6 @@ li {
 }
 
 body {
-    background: gray;
 }
 /* 上面固定的导航栏 */
 .header-nav {
@@ -33,6 +38,7 @@ body {
     display: flex;
     align-items: center;
     width: 100vw;
+    height: 80px;
     z-index: 10;
 }
 
@@ -66,24 +72,44 @@ body {
 }
 /* end导航栏 */
 
-.code-background {
-    display: none;
-}
-/* 弹幕 */
-.pop-comment {
-    display: none;
-}
 /* 第一页 */
 .first-pages {
     width: 100vw;
     height: calc(100vw * 9 / 16);
-    background: cadetblue;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center; /* 垂直居中 */
-    justify-content: center;
+    background: rgb(179, 179, 179);
 }
+
+.sum-contain {
+    display: flex;
+}
+.code-background {
+    position: absolute;
+}
+.language-cshap {
+    background: rgba(0, 0, 0, 0.371);
+    position: absolute;
+    left: -100px;
+    top: -100px;
+}
+.bk-two {
+    background: rgba(0, 0, 0, 0.359);
+    position: absolute;
+    left: -100px;
+    top: 100px;
+}
+.bk-three {
+    background: rgba(0, 0, 0, 0.328);
+    position: absolute;
+    left: 400px;
+    top: 100px;
+}
+.bk-four {
+    background: rgba(0, 0, 0, 0.362);
+    position: absolute;
+    left: 400px;
+    top: -100px;
+}
+
 .head-image {
     float: left;
 }
@@ -92,12 +118,28 @@ body {
     height: auto;
     clip-path: circle(40%);
 }
+.sum-box {
+    background: rgba(22, 17, 17, 0.474);
+    padding: 20px;
+    border-radius: 10px;
+}
+
 .contain-guide {
     position: absolute;
-    /* 核心：贴在父容器最底部 */
     bottom: 0;
 }
 /* end第一页 */
+.pages {
+    width: 100vw;
+    height: calc(100vw * 9 / 16);
+    border: white 2px solid;
+    background: rgb(111, 102, 0);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* 垂直居中 */
+    justify-content: center;
+}
 
 /* 页脚 */
 .foot {

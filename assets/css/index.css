@@ -33,7 +33,7 @@ body {
 }
 /* 上面固定的导航栏 */
 .header-nav {
-    background: rgb(77, 77, 92);
+    background: #393e46;
     position: fixed;
     display: flex;
     align-items: center;
@@ -76,16 +76,25 @@ body {
 .first-pages {
     width: 100vw;
     height: calc(100vw * 9 / 16);
-    background: rgb(179, 179, 179);
+    background: linear-gradient(#99ccff, #cccccc);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pop-comment {
+    display: none;
+}
+.code-background {
+    display: none;
+    position: absolute;
 }
 
 .sum-contain {
     display: flex;
 }
-.code-background {
-    position: absolute;
-}
-.language-cshap {
+
+/* 背景墙 */
+/* .bk-one {
     background: rgba(0, 0, 0, 0.371);
     position: absolute;
     left: -100px;
@@ -108,22 +117,25 @@ body {
     position: absolute;
     left: 400px;
     top: -100px;
-}
-
+} */
+/*  */
 .head-image {
     float: left;
 }
-.head-image img {
+.sum-box img {
     width: 12rem;
     height: auto;
     clip-path: circle(40%);
 }
 .sum-box {
-    background: rgba(22, 17, 17, 0.474);
-    padding: 20px;
-    border-radius: 10px;
+    background: #99ccff;
+    padding: 20px 40px 20px 0;
+    border-radius: 12px;
 }
-
+.jieshao {
+    display: flex;
+    flex-direction: column;
+}
 .contain-guide {
     position: absolute;
     bottom: 0;
@@ -133,7 +145,7 @@ body {
     width: 100vw;
     height: calc(100vw * 9 / 16);
     border: white 2px solid;
-    background: rgb(111, 102, 0);
+    background: #cccccc;
     position: relative;
     display: flex;
     flex-direction: column;

@@ -6,34 +6,39 @@
     padding: 0;
 }
 
-p,
-a,
-ul,
-code,
-span {
+body {
     color: rgb(252, 255, 252);
-    font-family: Maple Mono NF CN;
+    font-family: "Maple Mono NF CN";
     font-size: 1.2rem;
 }
-svg {
-    height: 30px;
-    width: auto;
+
+ul,
+ol {
+    list-style: none;
 }
 a {
     text-decoration: none;
+    color: inherit;
 }
-ul {
-    list-style: none;
+img {
+    vertical-align: middle;
+    max-width: 100%;
 }
-li {
-    float: right;
+input,
+button,
+textarea,
+select {
+    outline: none;
+    border: none;
+    font-family: inherit;
+}
+button {
+    cursor: pointer;
 }
 
-body {
-}
 /* 上面固定的导航栏 */
 .header-nav {
-    background: #393e46;
+    background: #96abc9;
     position: fixed;
     display: flex;
     align-items: center;
@@ -41,9 +46,8 @@ body {
     height: 80px;
     z-index: 10;
 }
-
 .nav-logo {
-    width: 3rem;
+    width: 4rem;
     -webkit-user-drag: none;
     clip-path: circle(40%);
 }
@@ -52,11 +56,9 @@ body {
     display: flex;
     align-items: center;
 }
-.home,
-.blog {
-    padding: 15px;
+.nav-guide a {
+    padding: 0 15px;
 }
-
 .nav-title {
     margin: 0 auto;
 }
@@ -64,11 +66,10 @@ body {
     margin: 0 20px 0 auto;
     display: flex;
 }
-.search,
-.languge,
-.theme,
-.github {
+.nav-tools svg {
     padding: 0 20px;
+    height: 30px;
+    width: auto;
 }
 /* end导航栏 */
 
@@ -78,8 +79,8 @@ body {
     height: calc(100vw * 9 / 16);
     background: linear-gradient(#99ccff, #cccccc);
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 .pop-comment {
     display: none;
@@ -91,6 +92,7 @@ body {
 
 .sum-contain {
     display: flex;
+    margin-top: 200px;
 }
 
 /* 背景墙 */
@@ -118,28 +120,42 @@ body {
     left: 400px;
     top: -100px;
 } */
-/*  */
-.head-image {
-    float: left;
+
+.sum-box {
+    background: #8ba8c8;
+    padding: 20px 40px 20px 0;
+    border-radius: 12px;
+    display: flex;
 }
 .sum-box img {
     width: 12rem;
     height: auto;
     clip-path: circle(40%);
 }
-.sum-box {
-    background: #99ccff;
-    padding: 20px 40px 20px 0;
-    border-radius: 12px;
-}
 .jieshao {
     display: flex;
     flex-direction: column;
 }
-.contain-guide {
-    position: absolute;
-    bottom: 0;
+.lianxi {
+    margin-top: 30px;
 }
+
+.sum-motto {
+    margin: 80px;
+}
+/* 下箭头 */
+.contain-guide {
+    margin: auto;
+}
+.contain-guide div {
+    display: flex;
+    justify-content: center;
+}
+.contain-guide span {
+    font-size: 12px;
+    color: #393e4682;
+}
+
 /* end第一页 */
 .pages {
     width: 100vw;
@@ -149,7 +165,7 @@ body {
     position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center; /* 垂直居中 */
+    align-items: center;
     justify-content: center;
 }
 
@@ -158,7 +174,6 @@ body {
     background: rgb(66, 70, 77);
     padding: 50px 0;
     display: flex;
-
     align-content: center;
     justify-content: center;
 }

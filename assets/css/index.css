@@ -42,33 +42,50 @@ button {
 
 /* 上面固定的导航栏 */
 .header-nav {
-    background: #96abc9;
+    /* background: #96abc9; */
     position: fixed;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     width: 100vw;
-    height: 80px;
+    /* height: 80px; */
     z-index: 10;
+    transition: all 0.2s ease;
+}
+.nav-guide,
+.nav-title,
+.nav-tools {
+    background: #96abc9;
+    padding: 10px;
+    box-shadow: inset -1px 1px 4px rgba(255, 255, 255, 0.77);
+}
+
+.nav-guide {
+    margin: 0 auto 0 0;
+    display: flex;
+    align-items: center;
+    border-radius: 0 12px 12px 0;
+}
+.nav-guide a {
+    padding: 0 15px;
 }
 .nav-logo {
     width: 4rem;
     -webkit-user-drag: none;
     clip-path: circle(40%);
 }
-.nav-guide {
-    margin: 0 auto 0 0;
-    display: flex;
-    align-items: center;
-}
-.nav-guide a {
-    padding: 0 15px;
-}
+
 .nav-title {
+    display: flex;
     margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+    border-radius: 12px;
 }
 .nav-tools {
-    margin: 0 20px 0 auto;
+    margin: 0 0 0 auto;
     display: flex;
+    align-items: center;
+    border-radius: 12px 0 0 12px;
 }
 .nav-tools svg {
     padding: 0 20px;
@@ -220,3 +237,12 @@ button {
 }
 
 /* 页脚 */
+.hidden {
+    transform: translateY(-100px);
+    opacity: 0;
+    visibility: hidden;
+}
+.show-down {
+    transform: translateY(100px);
+    opacity: 1;
+}

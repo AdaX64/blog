@@ -42,19 +42,16 @@ button {
 
 /* 上面固定的导航栏 */
 .header-nav {
-    /* background: #96abc9; */
     position: fixed;
     display: flex;
-    /* align-items: center; */
     width: 100vw;
-    /* height: 80px; */
     z-index: 10;
-    transition: all 0.2s ease;
+    transition: all 0.4s ease;
 }
 .nav-guide,
 .nav-title,
 .nav-tools {
-    background: #96abc9;
+    background: #6690ca;
     padding: 10px;
     box-shadow: inset -1px 1px 4px rgba(255, 255, 255, 0.77);
 }
@@ -105,17 +102,17 @@ button {
 }
 .pop-comment {
     display: none;
-}
-.code-background {
-    display: none;
     position: absolute;
 }
 
 .sum-contain {
-    display: flex;
-    margin-top: 150px;
+    margin-top: 15%;
 }
 
+.code-background {
+    display: none;
+    position: absolute;
+}
 /* 背景墙 */
 /* .bk-one {
     background: rgba(0, 0, 0, 0.371);
@@ -143,41 +140,59 @@ button {
 } */
 
 .sum-box {
-    background: #9abbde;
+    background: #bacfe7;
     padding: 20px 20px 20px 0;
     border-radius: 12px;
     display: flex;
     box-shadow:
-        0px 10px 10px rgba(0, 0, 0, 0.1),
-        -10px 10px 10px rgba(0, 0, 0, 0.1),
+        0px 10px 10px rgba(114, 114, 114, 0.1),
+        -10px 10px 10px rgba(127, 126, 126, 0.1),
         inset -1px 1px 4px rgba(255, 255, 255, 0.77);
 }
 .sum-box img {
-    width: 12rem;
-    height: auto;
+    width: auto;
+    height: 14rem;
     clip-path: circle(40%);
+}
+/* .jieshao p {
+    margin: 10px;
+} */
+.jieshao-name {
+    color: rgba(0, 109, 173, 0.549);
+    font-size: 2rem;
+    margin: 0 0 10px 18%;
+}
+.jieshao-jingli {
 }
 .lianxi {
     display: flex;
     margin-top: 20px;
 }
-.lianxi-bili,
-.lianxi-qq {
+
+.lianxi-box {
     background: #97bbde83;
     border-radius: 12px;
-    margin: 0 30px;
+    margin-right: 30px;
     padding: 10px;
     display: flex;
-    justify-content: center;
     align-items: center;
     box-shadow: inset -1px 1px 4px rgba(255, 255, 255, 0.77);
+    transition: all 0.5s ease-out;
 }
-
+.lianxi-box:hover {
+    color: rgba(0, 109, 173, 0.549);
+    background: #bacfe7;
+}
 .lianxi svg {
     height: 1.2rem;
     width: auto;
     vertical-align: middle;
     margin-right: 8px;
+}
+.lianxi-tip {
+    margin: 20px 0 0 10%;
+    color: #ffffffb6;
+    font-size: 1rem;
 }
 
 .sum-motto {

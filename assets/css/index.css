@@ -14,6 +14,7 @@ body {
     font-family: "Maple Mono NF CN";
     font-size: 1.2rem;
     font-weight: normal;
+    overflow-x: hidden;
 }
 
 ul,
@@ -46,14 +47,13 @@ button {
     display: flex;
     width: 100vw;
     z-index: 10;
-    transition: all 0.4s ease;
+    transition: all 0.6s ease-out;
 }
 .nav-guide,
 .nav-title,
 .nav-tools {
     background: #6690ca;
     padding: 10px;
-    box-shadow: inset -1px 1px 4px rgba(255, 255, 255, 0.77);
 }
 
 .nav-guide {
@@ -73,7 +73,7 @@ button {
 
 .nav-title {
     display: flex;
-    margin: 0 auto;
+
     padding: 0 20px;
     align-items: center;
     border-radius: 12px;
@@ -95,7 +95,7 @@ button {
 .first-pages {
     width: 100vw;
     height: calc(100vw * 9 / 16);
-    background: linear-gradient(#99ccff, #cccccc);
+    background: linear-gradient(#b7e4ff, #fff1e7);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,15 +154,10 @@ button {
     height: 14rem;
     clip-path: circle(40%);
 }
-/* .jieshao p {
-    margin: 10px;
-} */
 .jieshao-name {
     color: rgba(0, 109, 173, 0.549);
     font-size: 2rem;
     margin: 0 0 10px 18%;
-}
-.jieshao-jingli {
 }
 .lianxi {
     display: flex;
@@ -219,14 +214,18 @@ button {
 /* 下箭头 */
 .contain-guide {
     margin: auto 0 100px 0;
-}
-.contain-guide div {
-    display: flex;
-    justify-content: center;
+    position: relative;
 }
 .contain-guide p {
     font-size: 12px;
     color: #393e4682;
+}
+.contain-guide svg {
+    height: 2rem;
+    width: auto;
+    position: absolute;
+    left: 35%;
+    animation: down 1s linear infinite;
 }
 
 /* end第一页 */
@@ -241,17 +240,73 @@ button {
     align-items: center;
     justify-content: center;
 }
-
+/* 第二面 */
+.two-pages {
+    width: 100vw;
+    height: calc(100vw * 9 / 16);
+    background: linear-gradient(#fff1e7, #ffffff);
+    position: relative;
+}
+.contain-home {
+    position: absolute;
+    top: 50px;
+    left: 600px;
+    height: 300px;
+    width: 500px;
+    background-color: #6690ca;
+}
+.contain-blog {
+    position: absolute;
+    top: 500px;
+    left: 200px;
+    height: 300px;
+    width: 500px;
+    background-color: #6690ca;
+}
+.contain-app {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    width: 500px;
+    height: 300px;
+    background-color: #6690ca;
+}
+/* 第三页面 */
+.three-pages {
+    width: 100vw;
+    height: calc(100vw * 9 / 16);
+    background: linear-gradient(#ffffff, #ffe6e6, #ffecd5);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-game {
+    width: 80%;
+    height: 40%;
+    background-color: #6690ca;
+}
+.twod-game {
+    width: 80%;
+    height: 40%;
+    background-color: #b7e4ff;
+}
+/* 第四页面 */
+.four-pages {
+    width: 100vw;
+    height: calc(100vw * 9 / 16);
+    background: linear-gradient(#ffecd5, #edbb6f, #576670);
+}
 /* 页脚 */
 .foot {
-    background: rgb(66, 70, 77);
+    background: #2e343e;
     padding: 50px 0;
     display: flex;
     align-content: center;
     justify-content: center;
 }
 
-/* 页脚 */
+/* js效果 */
 .hidden {
     transform: translateY(-100px);
     opacity: 0;
@@ -260,4 +315,24 @@ button {
 .show-down {
     transform: translateY(100px);
     opacity: 1;
+}
+.add-shadow {
+    box-shadow:
+        inset -2px 2px 4px rgba(226, 244, 255, 0.87),
+        inset 1px -1px 4px rgba(73, 95, 117, 0.455);
+}
+.add-color {
+    background: #6690ca;
+}
+
+@keyframes down {
+    0%,
+    50%,
+    100% {
+        top: 10px;
+    }
+
+    80% {
+        top: 20px;
+    }
 }
